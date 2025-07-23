@@ -1,0 +1,899 @@
+<!doctype html> 
+<html class="no-js" lang="en"> 
+    <head> 
+        <!-- meta data -->         
+        <meta charset="utf-8"/> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->         
+        <!--font-family-->         
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet"/> 
+        <!-- title of site -->         
+        <title>PU JIN</title>         
+        <!-- For favicon png -->         
+        <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/> 
+        <!--font-awesome.min.css-->         
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css"/> 
+        <!--flat icon css-->         
+        <link rel="stylesheet" href="assets/css/flaticon.css"/> 
+        <!--animate.css-->         
+        <link rel="stylesheet" href="assets/css/animate.css"/> 
+        <!--owl.carousel.css-->         
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css"/> 
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"/> 
+        <!--bootstrap.min.css-->         
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"/> 
+        <!-- bootsnav -->         
+        <link rel="stylesheet" href="assets/css/bootsnav.css"/> 
+        <!--style.css-->         
+        <link rel="stylesheet" href="assets/css/style.css"/> 
+        <!--responsive.css-->         
+        <link rel="stylesheet" href="assets/css/responsive.css"/> 
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->         
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->         
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->         
+    </head>     
+    <body> 
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->         
+        <!-- top-area Start -->         
+        <header class="top-area"> 
+            <div class="header-area"> 
+                <!-- Start Navigation -->                 
+                <!--/nav-->                 
+                <!-- End Navigation -->                 
+            </div>
+            <!--/.header-area-->             
+            <div class="clearfix"></div>             
+        </header>
+        <div class="video-container" style="width: 100%; height: 100vh; overflow: hidden; position: relative; margin-bottom: 50px;">
+            <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                <source src="assets/videos/Earth2.mp4" type="video/mp4">
+                <!-- 可以添加其他格式以提高兼容性 -->
+                Your browser does not support the video tag.
+            </video>
+            <!-- 半透明覆盖层 -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4);"></div>
+            <!-- 可以在视频上添加介绍文字 -->
+            <!-- <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; width: 80%;">
+                <h1 style="font-size: 3em; margin-bottom: 20px;">PU JIN</h1>
+                <p style="font-size: 1.5em;">Earth Observation Researcher</p>
+            </div> -->
+        </div>
+        <!-- 添加向下滚动指示器 -->
+        <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); text-align: center; color: white;">
+            <p style="font-size: 1.2em; margin-bottom: 10px; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">Scroll Down</p>
+            <div class="scroll-down-arrow" style="animation: bounce 2s infinite;">
+                <i class="fa fa-angle-down fa-2x" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.7);"></i>
+            </div>
+        </div>
+        <style>@keyframes bounce { 0%, 20%, 50%, 80%, 100% {  transform: translateY(0); }  40% {  transform: translateY(-20px); }  60% {  transform: translateY(-10px); } } .scroll-down-arrow { animation: bounce 2s infinite; }</style>
+        <!-- /.top-area-->         
+        <!-- top-area End -->         
+        <!--welcome-hero start -->         
+        <!--/.welcome-hero-->         
+        <!--welcome-hero end -->         
+        <!--about start -->         
+        <section id="about" class="about"> 
+            <!-- <div class="section-heading text-center"> 
+                <h2><b>About me</b></h2> 
+            </div>              -->
+            <div class="single-about-heading text-center" style="width: 100%; margin: 0 auto;"> 
+                <h7 style="text-align: center; display: block; width: 100%;"><b>DesignEarth</b></h7> 
+                <h8>  A Multimodal Dataset for Controllable Aerial Image Generation  </h8>
+                <h7 style="text-align: center; display: block; width: 100%;">Pu Jin</h7> 
+                <!-- <h7 style="text-align: center; display: block; width: 100%;">Technical University of Munich</h7> -->
+            </div>
+            
+            <!-- 添加三个居中按钮 -->
+            <div style="display: flex; justify-content: center; margin-top: 30px; gap: 20px;">
+                <a href="#" target="_blank" class="btn" style="background-color: #274E18; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none; font-weight: 500; transition: all 0.3s ease;">
+                    <i class="fa fa-file-text-o" aria-hidden="true" style="margin-right: 8px;"></i>Paper
+                </a>
+                <a href="#" target="_blank" class="btn" style="background-color: #274E18; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none; font-weight: 500; transition: all 0.3s ease;">
+                    <i class="fa fa-github" aria-hidden="true" style="margin-right: 8px;"></i>Github Repo
+                </a>
+                <a href="#" target="_blank" class="btn" style="background-color: #274E18; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none; font-weight: 500; transition: all 0.3s ease;">
+                    <i class="fa fa-code" aria-hidden="true" style="margin-right: 8px;"></i>Huggingface
+                </a>
+            </div>
+            <div class="container">
+                <div class="single-about-txt"> 
+                    <h3>  <br> This proliferation of Unmanned aerial vehicles (UAVs) has led to an exponential increase in the volume of aerial imagery, simultaneously spurring a burgeoning demand for automated interpretation and synthesis methods. While significant strides have been made in general image generation and remote sensing image analysis, a crucial gap remains in datasets that cohesively integrate diverse modalities—such as high-resolution aerial photos, rich map representations, and comprehensive semantic descriptions—to facilitate controllable aerial image generation. Existing remote sensing datasets often focus on single modalities or lack the explicit structural and semantic annotations required for fine-grained generative control. To address this critical need, we introduce DesignEarth, a novel, large-scale, multi-modal dataset specifically designed to enable and benchmark controllable aerial image generation. DesignEarth uniquely comprise 265, 247 georeferenced aerial images and their corresponding multi-layered condition images, i.e., map image, pencil sketch, canny, and lineart image, and the detailed semantic descriptions with more than 38.4M tokens. This synergistic combination empowers models to synthesize aerial scenes not merely from textual prompts (text-to-image), but also with precise spatial and structural guidance derived from various map inputs (map-to-image, controllable generation). Furthermore, we establish a comprehensive benchmark on DesignEarth, evaluating state-of-the-art generative models across variety of tasks such as text-to-image generation, and conditioned image generation, offering baseline results and highlighting persistent challenges. Our extensive experiments underscore the dataset's utility in advancing research toward highly controllable and semantically consistent aerial scene synthesis.</h3>
+                    <!-- <h7 style="text-align: center; display: block; width: 100%;">Technical University of Munich</h7> -->
+                </div>
+            </div>
+        </section> 
+
+        <section id="profiles" class="profiles">
+            <section id="experience" class="experience"> 
+                <div class="section-heading text-center"> 
+                    <h2><b>DesignEarth Dataset</b></h2> 
+                </div> 
+                <div class="container">
+                    <div class="single-about-txt"> 
+                        <h3>  <br> The DesignEarth dataset is meticulously constructed to provide a comprehensive multi-modal resource for controllable aerial image generation. Overall, the dataset encompasses a vast collection of 1,326,235 images, specifically comprising 265,247 high-resolution aerial images and 1,060,988 corresponding condition images. Complementing this extensive visual data are 530,494 semantic descriptions, collectively exceeding 38.4 million tokens, ensuring rich linguistic context for each scene.   </h3>
+                        <!-- <h7 style="text-align: center; display: block; width: 100%;">Technical University of Munich</h7> -->
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="single-about-txt"> 
+                        <h3>  <br> Our aerial imagery is primarily sourced from Google Earth Engine, providing a global footprint with diverse geographical and thematic coverage. The resolution of high-resolution aerial image is 1.2 meters, capturing a wide array of remote sensing scene categories, including urban landscapes, rural areas, natural environments, and industrial sites, distributed across numerous countries worldwide (as exemplified in Figure 1). To enable versatile controllable generation, each aerial image is meticulously paired with four distinct types of condition images: Map images, and Pencil Sketch, Canny, and Lineart Images. In details, map images are derived from the publicly available and highly detailed OpenStreetMap (OSM) data; the remaining three condition modalities are generated using a combination of computer graphics techniques and style transfer networks. They offer varying levels of abstract, edge-based structural information, allowing for different forms of control during image synthesis.</h3>
+                        <!-- <h7 style="text-align: center; display: block; width: 100%;">Technical University of Munich</h7> -->
+                    </div>
+                </div>
+                <!-- Data Distribution Map -->
+                <!-- #border: 0px solid #ddd; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); -->
+                <div class="container" style="text-align: center; margin: 40px auto;">
+                    <h4 style="margin-bottom: 20px; color: #333;">Figure 1: Data Distribution Across Countries</h4>
+                    <div id="8da821ca908847f48f32a445519dbb48" class="chart-container" style="width:100%; max-width:900px; height:500px; margin: 0 auto; "></div> 
+                    <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                    <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/world.js"></script>
+                    <script>
+                        var chart_8da821ca908847f48f32a445519dbb48 = echarts.init(
+                            document.getElementById('8da821ca908847f48f32a445519dbb48'), 'white', {renderer: 'canvas'});
+                        var option_8da821ca908847f48f32a445519dbb48 = {
+                            "animation": true,
+                            "animationThreshold": 2000,
+                            "animationDuration": 1000,
+                            "animationEasing": "cubicOut",
+                            "animationDelay": 0,
+                            "animationDurationUpdate": 300,
+                            "animationEasingUpdate": "cubicOut",
+                            "animationDelayUpdate": 0,
+                            "aria": {
+                                "enabled": false
+                            },
+                            "color": [
+                                "#5470c6",
+                                "#91cc75",
+                                "#fac858",
+                                "#ee6666",
+                                "#73c0de",
+                                "#3ba272",
+                                "#fc8452",
+                                "#9a60b4",
+                                "#ea7ccc"
+                            ],
+                            "series": [
+                                {
+                                    "type": "map",
+                                    "name": "Number",
+                                    "label": {
+                                        "show": false,
+                                        "margin": 8,
+                                        "valueAnimation": false
+                                    },
+                                    "map": "world",
+                                    "data": [
+                                        {
+                                            "name": "France",
+                                            "value": 18180
+                                        },
+                                        {
+                                            "name": "German",
+                                            "value": 13466
+                                        },
+                                        {
+                                            "name": "Spain",
+                                            "value": 7695
+                                        },
+                                        {
+                                            "name": "Italy",
+                                            "value": 3419
+                                        },
+                                        {
+                                            "name": "Japan",
+                                            "value": 61252
+                                        },
+                                        {
+                                            "name": "Australia",
+                                            "value": 23715
+                                        },
+                                        {
+                                            "name": "United States",
+                                            "value": 110325
+                                        },
+                                        {
+                                            "name": "Brazil",
+                                            "value": 15810
+                                        },
+                                        {
+                                            "name": "Saudi Arabia",
+                                            "value": 11385
+                                        }
+                                    ],
+                                    "roam": true,
+                                    "aspectScale": 0.75,
+                                    "nameProperty": "name",
+                                    "selectedMode": false,
+                                    "zoom": 1,
+                                    "zlevel": 0,
+                                    "z": 2,
+                                    "seriesLayoutBy": "column",
+                                    "datasetIndex": 0,
+                                    "mapValueCalculation": "sum",
+                                    "showLegendSymbol": true,
+                                    "emphasis": {},
+                                    "rippleEffect": {
+                                        "show": true,
+                                        "brushType": "stroke",
+                                        "scale": 2.5,
+                                        "period": 4
+                                    }
+                                }
+                            ],
+                            "legend": [
+                                {
+                                    "data": [
+                                        "Number"
+                                    ],
+                                    "selected": {},
+                                    "show": true,
+                                    "padding": 5,
+                                    "itemGap": 10,
+                                    "itemWidth": 25,
+                                    "itemHeight": 14,
+                                    "backgroundColor": "transparent",
+                                    "borderColor": "#ccc",
+                                    "borderRadius": 0,
+                                    "pageButtonItemGap": 5,
+                                    "pageButtonPosition": "end",
+                                    "pageFormatter": "{current}/{total}",
+                                    "pageIconColor": "#2f4554",
+                                    "pageIconInactiveColor": "#aaa",
+                                    "pageIconSize": 15,
+                                    "animationDurationUpdate": 800,
+                                    "selector": false,
+                                    "selectorPosition": "auto",
+                                    "selectorItemGap": 7,
+                                    "selectorButtonGap": 10
+                                }
+                            ],
+                            "tooltip": {
+                                "show": true,
+                                "trigger": "item",
+                                "triggerOn": "mousemove|click",
+                                "axisPointer": {
+                                    "type": "line"
+                                },
+                                "showContent": true,
+                                "alwaysShowContent": false,
+                                "showDelay": 0,
+                                "hideDelay": 100,
+                                "enterable": false,
+                                "confine": false,
+                                "appendToBody": false,
+                                "transitionDuration": 0.4,
+                                "textStyle": {
+                                    "fontSize": 14
+                                },
+                                "borderWidth": 0,
+                                "padding": 5,
+                                "order": "seriesAsc"
+                            },
+                            "title": [
+                                {
+                                    "show": true,
+                                    "text": "",
+                                    "target": "blank",
+                                    "subtarget": "blank",
+                                    "padding": 5,
+                                    "itemGap": 10,
+                                    "textAlign": "auto",
+                                    "textVerticalAlign": "auto",
+                                    "triggerEvent": false
+                                }
+                            ],
+                            "visualMap": {
+                                "show": true,
+                                "type": "continuous",
+                                "min": 0,
+                                "max": 60000,
+                                "inRange": {
+                                    "color": [
+                                        "#50a3ba",
+                                        "#eac763",
+                                        "#d94e5d"
+                                    ]
+                                },
+                                "calculable": true,
+                                "inverse": false,
+                                "splitNumber": 5,
+                                "hoverLink": true,
+                                "orient": "vertical",
+                                "padding": 5,
+                                "showLabel": true,
+                                "itemWidth": 20,
+                                "itemHeight": 140,
+                                "borderWidth": 0
+                            }
+                        };
+                        chart_8da821ca908847f48f32a445519dbb48.setOption(option_8da821ca908847f48f32a445519dbb48);
+                        
+                        // 响应式调整图表大小
+                        window.addEventListener('resize', function() {
+                            chart_8da821ca908847f48f32a445519dbb48.resize();
+                        });
+                        
+                        // 移动设备优化
+                        if (window.innerWidth <= 768) {
+                            document.getElementById('8da821ca908847f48f32a445519dbb48').style.height = '350px';
+                            chart_8da821ca908847f48f32a445519dbb48.resize();
+                        }
+                    </script>
+                </div>
+                <div class="container">
+                    <div class="single-about-txt"> 
+                        <h3>  <br> We obtain the semantic descriptions by model generation and manual refinement.  For each high-resolution aerial image, we initially leverage the powerful Florence-2 model to generate two descriptions: a long caption and a short caption. Subsequently, a rigorous manual refinement process is undertaken. Human annotators meticulously modify any inaccurate or erroneous descriptive information, add missing semantic details, and enhance the overall richness and diversity of the language. This human-in-the-loop approach ensures the high quality and accuracy of the semantic descriptions, as visually illustrated in Figure 2. </h3>
+                    </div>
+                </div>
+                <!-- Figure 2: Word Cloud and City Distribution -->
+                <div class="container" style="text-align: center; margin: 40px auto;">
+                    <!-- <h4 style="margin-bottom: 30px; color: #333;">Figure 2: Semantic Descriptions Analysis</h4> -->
+                    
+                    <!-- Two-column layout with responsive design -->
+                    <div id="figure2-layout" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 30px; max-width: 1200px; margin: 0 auto;">
+                        
+                        <!-- Left column: Word Cloud border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); -->
+                        <div id="wordcloud-column" style="flex: 1; max-width: 48%;">
+                            <h5 style="margin-bottom: 15px; color: #555; font-size: 16px;">Figure 2: Word Cloud Visualization</h5>
+                            <div style="background-color: #ffffff; padding: 15px;">
+                                <img src="assets/images/wordcloud.png" alt="Word Cloud of Semantic Descriptions" style="width: 100%; height: auto; border-radius: 4px; display: block;">
+                            </div>
+                        </div>
+                        
+                        <!-- Right column: Bar Chart border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); -->
+                        <div id="barchart-column" style="flex: 1; max-width: 48%;">
+                            <h5 style="margin-bottom: 15px; color: #555; font-size: 16px;">Table 1: Dataset Distribution by Cities</h5>
+                            <div style="background-color: #ffffff; padding: 15px;">
+                                <div id="f607ef4a4e214e9486629fa83654e9c9" class="chart-container" style="width:100%; height:400px;"></div>
+                                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                                <script>
+                                    var chart_f607ef4a4e214e9486629fa83654e9c9 = echarts.init(
+                                        document.getElementById('f607ef4a4e214e9486629fa83654e9c9'), 'white', {renderer: 'canvas'});
+                                    var option_f607ef4a4e214e9486629fa83654e9c9 = {
+                                        "animation": true,
+                                        "animationThreshold": 2000,
+                                        "animationDuration": 1000,
+                                        "animationEasing": "cubicOut",
+                                        "animationDelay": 0,
+                                        "animationDurationUpdate": 300,
+                                        "animationEasingUpdate": "cubicOut",
+                                        "animationDelayUpdate": 0,
+                                        "aria": {
+                                            "enabled": false
+                                        },
+                                        "color": [
+                                            "#274E18",
+                                            "#5470c6",
+                                            "#91cc75",
+                                            "#fac858",
+                                            "#ee6666",
+                                            "#73c0de",
+                                            "#3ba272",
+                                            "#fc8452",
+                                            "#9a60b4",
+                                            "#ea7ccc"
+                                        ],
+                                        "series": [
+                                            {
+                                                "type": "bar",
+                                                "name": "Number of Images",
+                                                "legendHoverLink": true,
+                                                "data": [
+                                                    103770,
+                                                    5310,
+                                                    27000,
+                                                    53796,
+                                                    46170,
+                                                    20514,
+                                                    367512,
+                                                    110160,
+                                                    32130,
+                                                    40950,
+                                                    113130,
+                                                    127080,
+                                                    45630,
+                                                    215820,
+                                                    119340,
+                                                    94860,
+                                                    68310
+                                                ],
+                                                "realtimeSort": false,
+                                                "showBackground": false,
+                                                "stack": "stack1",
+                                                "stackStrategy": "samesign",
+                                                "cursor": "pointer",
+                                                "barMinHeight": 0,
+                                                "barCategoryGap": "20%",
+                                                "barGap": "30%",
+                                                "large": false,
+                                                "largeThreshold": 400,
+                                                "seriesLayoutBy": "column",
+                                                "datasetIndex": 0,
+                                                "clip": true,
+                                                "zlevel": 0,
+                                                "z": 2,
+                                                "label": {
+                                                    "show": false,
+                                                    "margin": 8,
+                                                    "valueAnimation": false
+                                                },
+                                                "rippleEffect": {
+                                                    "show": true,
+                                                    "brushType": "stroke",
+                                                    "scale": 2.5,
+                                                    "period": 4
+                                                }
+                                            }
+                                        ],
+                                        "legend": [
+                                            {
+                                                "data": [
+                                                    "Number of Images"
+                                                ],
+                                                "selected": {},
+                                                "show": true,
+                                                "padding": 5,
+                                                "itemGap": 10,
+                                                "itemWidth": 25,
+                                                "itemHeight": 14,
+                                                "backgroundColor": "transparent",
+                                                "borderColor": "#ccc",
+                                                "borderRadius": 0,
+                                                "pageButtonItemGap": 5,
+                                                "pageButtonPosition": "end",
+                                                "pageFormatter": "{current}/{total}",
+                                                "pageIconColor": "#2f4554",
+                                                "pageIconInactiveColor": "#aaa",
+                                                "pageIconSize": 15,
+                                                "animationDurationUpdate": 800,
+                                                "selector": false,
+                                                "selectorPosition": "auto",
+                                                "selectorItemGap": 7,
+                                                "selectorButtonGap": 10
+                                            }
+                                        ],
+                                        "tooltip": {
+                                            "show": true,
+                                            "trigger": "item",
+                                            "triggerOn": "mousemove|click",
+                                            "axisPointer": {
+                                                "type": "line"
+                                            },
+                                            "showContent": true,
+                                            "alwaysShowContent": false,
+                                            "showDelay": 0,
+                                            "hideDelay": 100,
+                                            "enterable": false,
+                                            "confine": false,
+                                            "appendToBody": false,
+                                            "transitionDuration": 0.4,
+                                            "textStyle": {
+                                                "fontSize": 14
+                                            },
+                                            "borderWidth": 0,
+                                            "padding": 5,
+                                            "order": "seriesAsc"
+                                        },
+                                        "xAxis": [
+                                            {
+                                                "show": true,
+                                                "scale": false,
+                                                "nameLocation": "end",
+                                                "nameGap": 15,
+                                                "gridIndex": 0,
+                                                "axisLabel": {
+                                                    "show": true,
+                                                    "rotate": -45,
+                                                    "margin": 8,
+                                                    "valueAnimation": false
+                                                },
+                                                "inverse": false,
+                                                "offset": 0,
+                                                "splitNumber": 5,
+                                                "minInterval": 0,
+                                                "splitLine": {
+                                                    "show": true,
+                                                    "lineStyle": {
+                                                        "show": true,
+                                                        "width": 1,
+                                                        "opacity": 1,
+                                                        "curveness": 0,
+                                                        "type": "solid"
+                                                    }
+                                                },
+                                                "animation": true,
+                                                "animationThreshold": 2000,
+                                                "animationDuration": 1000,
+                                                "animationEasing": "cubicOut",
+                                                "animationDelay": 0,
+                                                "animationDurationUpdate": 300,
+                                                "animationEasingUpdate": "cubicOut",
+                                                "animationDelayUpdate": 0,
+                                                "data": [
+                                                    "Paris",
+                                                    "Marseille",
+                                                    "Munich",
+                                                    "Berlin",
+                                                    "Barcelona",
+                                                    "Roma",
+                                                    "Tokyo",
+                                                    "Sydney",
+                                                    "Melbourne",
+                                                    "San Jose",
+                                                    "Los Angeles",
+                                                    "Chicago",
+                                                    "Boston",
+                                                    "Houston",
+                                                    "Miami",
+                                                    "Sao Paulo",
+                                                    "Ar-Riyad"
+                                                ]
+                                            }
+                                        ],
+                                        "yAxis": [
+                                            {
+                                                "show": true,
+                                                "scale": false,
+                                                "nameLocation": "end",
+                                                "nameGap": 15,
+                                                "gridIndex": 0,
+                                                "inverse": false,
+                                                "offset": 0,
+                                                "splitNumber": 5,
+                                                "minInterval": 0,
+                                                "splitLine": {
+                                                    "show": true,
+                                                    "lineStyle": {
+                                                        "show": true,
+                                                        "width": 1,
+                                                        "opacity": 1,
+                                                        "curveness": 0,
+                                                        "type": "solid"
+                                                    }
+                                                },
+                                                "animation": true,
+                                                "animationThreshold": 2000,
+                                                "animationDuration": 1000,
+                                                "animationEasing": "cubicOut",
+                                                "animationDelay": 0,
+                                                "animationDurationUpdate": 300,
+                                                "animationEasingUpdate": "cubicOut",
+                                                "animationDelayUpdate": 0
+                                            }
+                                        ],
+                                        "title": [
+                                            {
+                                                "show": false,
+                                                "target": "blank",
+                                                "subtarget": "blank",
+                                                "padding": 5,
+                                                "itemGap": 10,
+                                                "textAlign": "auto",
+                                                "textVerticalAlign": "auto",
+                                                "triggerEvent": false
+                                            }
+                                        ]
+                                    };
+                                    chart_f607ef4a4e214e9486629fa83654e9c9.setOption(option_f607ef4a4e214e9486629fa83654e9c9);
+                                    
+                                    // 移动设备优化 - 只在初始化时设置
+                                    if (window.innerWidth <= 768) {
+                                        document.getElementById('f607ef4a4e214e9486629fa83654e9c9').style.height = '300px';
+                                        chart_f607ef4a4e214e9486629fa83654e9c9.resize();
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 响应式布局脚本 -->
+                    <script>
+                        function adjustFigure2Layout() {
+                            const layout = document.getElementById('figure2-layout');
+                            const wordcloudColumn = document.getElementById('wordcloud-column');
+                            const barchartColumn = document.getElementById('barchart-column');
+                            const chartContainer = document.getElementById('f607ef4a4e214e9486629fa83654e9c9');
+                            
+                            if (window.innerWidth <= 768) {
+                                // 移动设备：垂直布局
+                                layout.style.flexDirection = 'column';
+                                layout.style.gap = '20px';
+                                
+                                // 完全重置列的样式，确保占满宽度
+                                wordcloudColumn.style.flex = 'none';
+                                wordcloudColumn.style.width = '100%';
+                                wordcloudColumn.style.maxWidth = 'none';
+                                
+                                barchartColumn.style.flex = 'none';
+                                barchartColumn.style.width = '100%';
+                                barchartColumn.style.maxWidth = 'none';
+                                
+                                // 强制设置图表容器宽度
+                                if (chartContainer) {
+                                    chartContainer.style.width = '100%';
+                                    chartContainer.style.minWidth = '100%';
+                                }
+                                
+                                // 延迟调整图表大小，确保容器已完全展开
+                                setTimeout(() => {
+                                    if (typeof chart_f607ef4a4e214e9486629fa83654e9c9 !== 'undefined') {
+                                        // 强制重新计算容器尺寸
+                                        chart_f607ef4a4e214e9486629fa83654e9c9.dispose();
+                                        chart_f607ef4a4e214e9486629fa83654e9c9 = echarts.init(chartContainer, 'white', {renderer: 'canvas'});
+                                        chart_f607ef4a4e214e9486629fa83654e9c9.setOption(option_f607ef4a4e214e9486629fa83654e9c9);
+                                    }
+                                }, 200);
+                            } else {
+                                // 桌面设备：水平布局
+                                layout.style.flexDirection = 'row';
+                                layout.style.gap = '30px';
+                                
+                                // 恢复flex布局
+                                wordcloudColumn.style.flex = '1';
+                                wordcloudColumn.style.width = 'auto';
+                                wordcloudColumn.style.maxWidth = '48%';
+                                
+                                barchartColumn.style.flex = '1';
+                                barchartColumn.style.width = 'auto';
+                                barchartColumn.style.maxWidth = '48%';
+                                
+                                // 重置图表容器宽度
+                                if (chartContainer) {
+                                    chartContainer.style.width = '100%';
+                                    chartContainer.style.minWidth = 'auto';
+                                }
+                                
+                                // 重新调整柱状图大小以适应48%宽度
+                                setTimeout(() => {
+                                    if (typeof chart_f607ef4a4e214e9486629fa83654e9c9 !== 'undefined') {
+                                        chart_f607ef4a4e214e9486629fa83654e9c9.resize();
+                                    }
+                                }, 100);
+                            }
+                        }
+                        
+                        // 初始调用
+                        setTimeout(() => {
+                            adjustFigure2Layout();
+                        }, 500);
+                        
+                        // 监听窗口大小变化
+                        window.addEventListener('resize', function() {
+                            adjustFigure2Layout();
+                        });
+                    </script>
+                    
+                    <!-- 添加移动端CSS样式 -->
+                    <style>
+                        @media screen and (max-width: 768px) {
+                            #figure2-layout {
+                                flex-direction: column !important;
+                                gap: 20px !important;
+                            }
+                            
+                            #wordcloud-column, #barchart-column {
+                                flex: none !important;
+                                width: 100% !important;
+                                max-width: none !important;
+                                margin: 0 !important;
+                            }
+                            
+                            #f607ef4a4e214e9486629fa83654e9c9 {
+                                width: 100% !important;
+                                min-width: 100% !important;
+                            }
+                            
+                            .chart-container {
+                                width: 100% !important;
+                                min-width: 100% !important;
+                            }
+                        }
+                    </style>
+                </div>
+
+                <div class="container">
+                    <div class="single-about-txt"> 
+                        <h3>  <br> In summary, a single data entry within the DesignEarth dataset is a cohesive multi-modal unit designed for comprehensive scene understanding and generation. Each entry systematically includes: one high-resolution aerial image, four corresponding condition images, and two semantic descriptions. Several illustrative samples showcasing these multi-modal entries are presented in Figure 3. </h3>
+                    </div>
+                </div>
+
+                <!-- Figure 3: Dataset Samples -->
+                <div class="container" style="text-align: center; margin: 40px auto;">
+                    <h4 style="margin-bottom: 20px; color: #333;">Figure 3: Illustrative Samples of DesignEarth Dataset Multi-modal Entries</h4>
+                    <img src="assets/images/samples.jpg" alt="DesignEarth Dataset Samples" style="width: 100%; height: auto; border-radius: 4px; display: block;">
+                </div>
+            </section>
+            
+            <section id="experience" class="experience"> 
+                <div class="section-heading text-center"> 
+                    <h2><b>Benchmark</b></h2> 
+                </div>
+                <div class="container">
+                    <div class="single-about-txt"> 
+                        <h3>  <br> The DesignEarth dataset's multi-modal nature makes it a versatile resource applicable to a wide array of remote sensing tasks, encompassing traditional analytical challenges such as building footprint detection, semantic segmentation, scene classification, and image captioning. Given the rapid advancements in generative algorithms in recent years, our primary focus for establishing initial benchmarks on DesignEarth is on generative tasks, particularly those enabling the synthesis of complex aerial scenes. We provide two benchmarks, T2I generation and T2I controllable generation. </h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="single-about-txt"> 
+                        <h3>  <br> As a foundational generative task, we establish a benchmark for text-to-image generation, where the objective is to synthesize a high-fidelity aerial image corresponding to a given textual description. This task leverages the precisely aligned aerial images and their rich semantic descriptions within the DesignEarth dataset. To assess current capabilities, we extensively evaluated several popular and state-of-the-art generative networks, adapting them for the unique characteristics of aerial imagery. The performance of these models was quantitatively measured using a relevant metric (e.g., FID score). The results for the evaluated models are summarized below:</h3>
+                    </div>
+                </div>
+                <!-- Two Benchmark Tables -->
+                <div class="container" style="text-align: center; margin: 40px auto;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 30px; max-width: 1200px; margin: 0 auto;">
+                        
+                        <!-- First Table: T2I Generation Benchmark -->
+                        <div style="flex: 1; max-width: 48%;">
+                            <h4 style="margin-bottom: 20px; color: #333;">Table 2: T2I Generation Benchmark</h4>
+                            <table style="width: 100%; border-collapse: collapse; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                                <thead>
+                                    <tr style="background-color: #274E18; color: white;">
+                                        <th style="padding: 12px; text-align: center; font-weight: 600;">Method</th>
+                                        <th style="padding: 12px; text-align: center; font-weight: 600;">Model</th>
+                                        <th style="padding: 12px; text-align: center; font-weight: 600;">FID</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid #eee;">
+                                        <td style="padding: 10px; text-align: center;">diffusion</td>
+                                        <td style="padding: 10px; text-align: center;">diffusion</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">57.26</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #eee; background-color: #f9f9f9;">
+                                        <td style="padding: 10px; text-align: center;">DiT</td>
+                                        <td style="padding: 10px; text-align: center;">diffusion</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">54.12</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #eee;">
+                                        <td style="padding: 10px; text-align: center;">Infinity</td>
+                                        <td style="padding: 10px; text-align: center;">AR</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">50.47</td>
+                                    </tr>
+                                    <tr style="background-color: #f9f9f9;">
+                                        <td style="padding: 10px; text-align: center;">RAR</td>
+                                        <td style="padding: 10px; text-align: center;">AR</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500; color: #274E18;"><strong>48.75</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- Second Table: T2I Controllable Generation Benchmark -->
+                        <div style="flex: 1; max-width: 48%;">
+                            <h4 style="margin-bottom: 20px; color: #333;">Table 3: T2I Controllable Generation Benchmark</h4>
+                            <table style="width: 100%; border-collapse: collapse; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                                <thead>
+                                    <tr style="background-color: #274E18; color: white;">
+                                        <th style="padding: 12px; text-align: center; font-weight: 600;">Method</th>
+                                        <th style="padding: 12px; text-align: center; font-weight: 600;">Model</th>
+                                        <th style="padding: 12px; text-align: center; font-weight: 600;">Map</th>
+                                        <th style="padding: 12px; text-align: center; font-weight: 600;">Pencil</th>
+                                        <th style="padding: 12px; text-align: center; font-weight: 600;">Canny</th>
+                                        <th style="padding: 12px; text-align: center; font-weight: 600;">Lineart</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid #eee;">
+                                        <td style="padding: 10px; text-align: center;">ControlNet</td>
+                                        <td style="padding: 10px; text-align: center;">diffusion</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">54.12</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">45.68</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">48.76</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">50.34</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #eee; background-color: #f9f9f9;">
+                                        <td style="padding: 10px; text-align: center;">ControlNet++</td>
+                                        <td style="padding: 10px; text-align: center;">diffusion</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">50.47</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">46.01</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">47.63</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">43.87</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #eee;">
+                                        <td style="padding: 10px; text-align: center;">ControlVAR</td>
+                                        <td style="padding: 10px; text-align: center;">AR</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">48.75</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">42.85</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">45.80</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">45.33</td>
+                                    </tr>
+                                    <tr style="background-color: #f9f9f9;">
+                                        <td style="padding: 10px; text-align: center;">ControlAR</td>
+                                        <td style="padding: 10px; text-align: center;">AR</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">47.12</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">43.78</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500; color: #274E18;"><strong>42.15</strong></td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">46.67</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- 响应式设计：移动端垂直布局 -->
+                    <style>
+                        @media screen and (max-width: 768px) {
+                            .container > div:last-child {
+                                flex-direction: column !important;
+                                gap: 20px !important;
+                            }
+                            
+                            .container > div:last-child > div {
+                                flex: none !important;
+                                width: 100% !important;
+                                max-width: none !important;
+                            }
+                            
+                            .container table {
+                                font-size: 12px !important;
+                            }
+                            
+                            .container th, .container td {
+                                padding: 8px 4px !important;
+                            }
+                        }
+                    </style>
+                </div>
+            </section>
+        </section>
+
+        <!--/.profiles-->         
+        <!--profiles end -->         
+        <!--portfolio start -->         
+
+     
+    </section>
+    <!--/.clients-->     
+    <!--clients end -->     
+    <!--contact start -->     
+    <!--/.contact-->     
+    <!--contact end -->     
+    <!--footer-copyright start-->     
+    <footer id="footer-copyright" class="footer-copyright"> 
+        <div class="container"> 
+            <div class="hm-footer-copyright text-center"> 
+                <p>&copy; 2025 copyright Pu Jin</p>
+                <!--/p-->                 
+            </div>
+            <!--/.text-center-->             
+        </div>
+        <!--/.container-->         
+        <div id="scroll-Top"> 
+            <div class="return-to-top"> 
+                <i class="fa fa-angle-up " id="scroll-top"></i> 
+            </div>             
+        </div>
+        <!--/.scroll-Top-->         
+    </footer>
+    <!--/.footer-copyright-->     
+    <!--footer-copyright end-->     
+    <!-- Include all js compiled plugins (below), or include individual files as needed -->     
+    <script src="assets/js/jquery.js"></script>     
+    <!--modernizr.min.js-->     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>     
+    <!--bootstrap.min.js-->     
+    <script src="assets/js/bootstrap.min.js"></script>     
+    <!-- bootsnav js -->     
+    <script src="assets/js/bootsnav.js"></script>     
+    <!-- jquery.sticky.js -->     
+    <script src="assets/js/jquery.sticky.js"></script>     
+    <!-- for progress bar start-->     
+    <!-- progressbar js -->     
+    <script src="assets/js/progressbar.js"></script>     
+    <!-- appear js -->     
+    <script src="assets/js/jquery.appear.js"></script>     
+    <!-- for progress bar end -->     
+    <!--owl.carousel.js-->     
+    <script src="assets/js/owl.carousel.min.js"></script>     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>     
+    <!--Custom JS-->     
+    <script src="assets/js/custom.js"></script>     
+</body>
