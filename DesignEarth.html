@@ -104,7 +104,6 @@
             <div class="container">
                 <div class="single-about-txt"> 
                     <h3>  <br> This proliferation of Unmanned aerial vehicles (UAVs) has led to an exponential increase in the volume of aerial imagery, simultaneously spurring a burgeoning demand for automated interpretation and synthesis methods. While significant strides have been made in general image generation and remote sensing image analysis, a crucial gap remains in datasets that cohesively integrate diverse modalities—such as high-resolution aerial photos, rich map representations, and comprehensive semantic descriptions—to facilitate controllable aerial image generation. Existing remote sensing datasets often focus on single modalities or lack the explicit structural and semantic annotations required for fine-grained generative control. To address this critical need, we introduce DesignEarth, a novel, large-scale, multi-modal dataset specifically designed to enable and benchmark controllable aerial image generation. DesignEarth uniquely comprise 265, 247 georeferenced aerial images and their corresponding multi-layered condition images, i.e., map image, pencil sketch, canny, and lineart image, and the detailed semantic descriptions with more than 38.4M tokens. This synergistic combination empowers models to synthesize aerial scenes not merely from textual prompts (text-to-image), but also with precise spatial and structural guidance derived from various map inputs (map-to-image, controllable generation). Furthermore, we establish a comprehensive benchmark on DesignEarth, evaluating state-of-the-art generative models across variety of tasks such as text-to-image generation, and conditioned image generation, offering baseline results and highlighting persistent challenges. Our extensive experiments underscore the dataset's utility in advancing research toward highly controllable and semantically consistent aerial scene synthesis.</h3>
-                    <!-- <h7 style="text-align: center; display: block; width: 100%;">Technical University of Munich</h7> -->
                 </div>
             </div>
         </section> 
@@ -723,7 +722,7 @@
                 </div>
                 <div class="container">
                     <div class="single-about-txt"> 
-                        <h3>  <br> As a foundational generative task, we establish a benchmark for text-to-image generation, where the objective is to synthesize a high-fidelity aerial image corresponding to a given textual description. This task leverages the precisely aligned aerial images and their rich semantic descriptions within the DesignEarth dataset. To assess current capabilities, we extensively evaluated several popular and state-of-the-art generative networks, adapting them for the unique characteristics of aerial imagery. The performance of these models was quantitatively measured using a relevant metric (e.g., FID score). The results for the evaluated models are summarized below:</h3>
+                        <h3>  <br> As a foundational generative task, we establish a benchmark for text-to-image generation, where the objective is to synthesize a high-fidelity aerial image corresponding to a given textual description. This task leverages the precisely aligned aerial images and their rich semantic descriptions within the DesignEarth dataset. To assess current capabilities, we extensively evaluated several popular and state-of-the-art generative networks, adapting them for the unique characteristics of aerial imagery. The performance of these models was quantitatively measured using a relevant metric (e.g., FID score ↓). The results for the evaluated models are summarized in Table.2</h3>
                     </div>
                 </div>
                 <!-- Two Benchmark Tables -->
@@ -736,31 +735,42 @@
                             <table style="width: 100%; border-collapse: collapse; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
                                 <thead>
                                     <tr style="background-color: #274E18; color: white;">
-                                        <th style="padding: 12px; text-align: center; font-weight: 600;">Method</th>
+                                        <th style="padding: 12px; text-align: center; font-weight: 600;">Type</th>
                                         <th style="padding: 12px; text-align: center; font-weight: 600;">Model</th>
+                                        <th style="padding: 12px; text-align: center; font-weight: 600;">#Params</th>
                                         <th style="padding: 12px; text-align: center; font-weight: 600;">FID</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr style="border-bottom: 1px solid #eee;">
-                                        <td style="padding: 10px; text-align: center;">diffusion</td>
-                                        <td style="padding: 10px; text-align: center;">diffusion</td>
+                                        <td style="padding: 10px; text-align: center;">Diffusion</td>
+                                        <td style="padding: 10px; text-align: center;">LDM-4</td>
+                                        <td style="padding: 10px; text-align: center;">400M</td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500;">57.26</td>
                                     </tr>
                                     <tr style="border-bottom: 1px solid #eee; background-color: #f9f9f9;">
-                                        <td style="padding: 10px; text-align: center;">DiT</td>
-                                        <td style="padding: 10px; text-align: center;">diffusion</td>
+                                        <td style="padding: 10px; text-align: center;">Diffusion</td>
+                                        <td style="padding: 10px; text-align: center;">DiT-XL/2</td>
+                                        <td style="padding: 10px; text-align: center;">675M</td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500;">54.12</td>
                                     </tr>
                                     <tr style="border-bottom: 1px solid #eee;">
-                                        <td style="padding: 10px; text-align: center;">Infinity</td>
                                         <td style="padding: 10px; text-align: center;">AR</td>
+                                        <td style="padding: 10px; text-align: center;">LlamaGen-XXL</td>
+                                        <td style="padding: 10px; text-align: center;">1.4B</td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500;">50.47</td>
                                     </tr>
                                     <tr style="background-color: #f9f9f9;">
-                                        <td style="padding: 10px; text-align: center;">RAR</td>
                                         <td style="padding: 10px; text-align: center;">AR</td>
-                                        <td style="padding: 10px; text-align: center; font-weight: 500; color: #274E18;"><strong>48.75</strong></td>
+                                        <td style="padding: 10px; text-align: center;">Infinity-2B</td>
+                                        <td style="padding: 10px; text-align: center;">2.0B</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">48.75</td>
+                                    </tr>
+                                    <tr style="background-color: #f9f9f9;">
+                                        <td style="padding: 10px; text-align: center;">AR</td>
+                                        <td style="padding: 10px; text-align: center;">RAR-XL</td>
+                                        <td style="padding: 10px; text-align: center;">1.5B</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500; color: #274E18;"><strong>47.53</strong></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -772,8 +782,8 @@
                             <table style="width: 100%; border-collapse: collapse; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
                                 <thead>
                                     <tr style="background-color: #274E18; color: white;">
+                                        <th style="padding: 12px; text-align: center; font-weight: 600;">Type</th>
                                         <th style="padding: 12px; text-align: center; font-weight: 600;">Method</th>
-                                        <th style="padding: 12px; text-align: center; font-weight: 600;">Model</th>
                                         <th style="padding: 12px; text-align: center; font-weight: 600;">Map</th>
                                         <th style="padding: 12px; text-align: center; font-weight: 600;">Pencil</th>
                                         <th style="padding: 12px; text-align: center; font-weight: 600;">Canny</th>
@@ -782,33 +792,41 @@
                                 </thead>
                                 <tbody>
                                     <tr style="border-bottom: 1px solid #eee;">
+                                        <td style="padding: 10px; text-align: center;">Diffusion</td>
                                         <td style="padding: 10px; text-align: center;">ControlNet</td>
-                                        <td style="padding: 10px; text-align: center;">diffusion</td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500;">54.12</td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500;">45.68</td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500;">48.76</td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500;">50.34</td>
                                     </tr>
                                     <tr style="border-bottom: 1px solid #eee; background-color: #f9f9f9;">
+                                        <td style="padding: 10px; text-align: center;">Diffusion</td>
                                         <td style="padding: 10px; text-align: center;">ControlNet++</td>
-                                        <td style="padding: 10px; text-align: center;">diffusion</td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500;">50.47</td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500;">46.01</td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500;">47.63</td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500;">43.87</td>
                                     </tr>
+                                    <tr style="border-bottom: 1px solid #eee; background-color: #f9f9f9;">
+                                        <td style="padding: 10px; text-align: center;">Diffusion</td>
+                                        <td style="padding: 10px; text-align: center;">UniControl</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">51.26</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">44.08</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">46.57</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500;">49.12</td>
+                                    </tr>
                                     <tr style="border-bottom: 1px solid #eee;">
-                                        <td style="padding: 10px; text-align: center;">ControlVAR</td>
                                         <td style="padding: 10px; text-align: center;">AR</td>
+                                        <td style="padding: 10px; text-align: center;">ControlVAR</td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500;">48.75</td>
-                                        <td style="padding: 10px; text-align: center; font-weight: 500;">42.85</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500; color: #274E18;"><strong>42.85</strong></td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500;">45.80</td>
-                                        <td style="padding: 10px; text-align: center; font-weight: 500;">45.33</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500; color: #274E18;"><strong>45.33</strong></td>
                                     </tr>
                                     <tr style="background-color: #f9f9f9;">
-                                        <td style="padding: 10px; text-align: center;">ControlAR</td>
                                         <td style="padding: 10px; text-align: center;">AR</td>
-                                        <td style="padding: 10px; text-align: center; font-weight: 500;">47.12</td>
+                                        <td style="padding: 10px; text-align: center;">ControlAR</td>
+                                        <td style="padding: 10px; text-align: center; font-weight: 500; color: #274E18;"><strong>47.12</strong></td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500;">43.78</td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500; color: #274E18;"><strong>42.15</strong></td>
                                         <td style="padding: 10px; text-align: center; font-weight: 500;">46.67</td>
@@ -842,7 +860,214 @@
                         }
                     </style>
                 </div>
+                <div class="container">
+                    <div class="single-about-txt"> 
+                        <h3>  <br> Beyond pure text-to-image synthesis, a core objective of DesignEarth is to facilitate controllable aerial image generation. For this benchmark, models are tasked with generating aerial images conditioned on both a textual prompt and various control images. These control images, including maps, pencil sketches, Canny edge maps, and lineart representations. We evaluated several cutting-edge controllable generative networks, adapting them to leverage DesignEarth's multi-modal inputs. The performance metrics (e.g., FID score ↓) for these models across different control modalities are presented in the Table.3. The visalized results are shown in the Figure.4.</h3>
+                    </div>
+                </div>
+
+                <!-- Model Results Showcase -->
+                <div class="container" style="text-align: center; margin: 40px auto;">
+                    <h4 style="margin-bottom: 30px; color: #333;">Figure 4: Controllable Generation Results</h4>
+                    <p style="margin-bottom: 20px; color: #666; font-size: 14px;">Hover over the control images to see the generated aerial images</p>
+                    
+                    <!-- Four Control Images Grid -->
+                    <div class="control-results-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1200px; margin: 0 auto;">
+                        
+                        <!-- Map Control -->
+                        <div class="control-item" style="position: relative; background: #f9f9f9; border-radius: 8px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <h5 style="margin-bottom: 15px; color: #274E18; font-weight: 600;">Map</h5>
+                            <div class="image-container" style="position: relative; width: 100%; aspect-ratio: 1/1; border-radius: 4px; overflow: hidden; cursor: pointer;">
+                                <!-- Control Image (always visible) -->
+                                <img src="assets/images/results/c1.jpg" alt="Map Control" class="control-img" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 2;">
+                                <!-- Generated Image (appears on hover) -->
+                                <img src="assets/images/results/p1.png" alt="Generated from Map" class="generated-img" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 1; opacity: 0; transition: opacity 1s ease-in-out;">
+                            </div>
+                            <div class="prompt-text" style="margin-top: 15px; padding: 10px; background: #fff; border-radius: 4px; font-size: 12px; color: #555; line-height: 1.4; min-height: 60px;">
+                                "An aerial view of a residential area with circular layouts and surrounding roads and scattered houses surrounded by green vegetation and a river."
+                            </div>
+                        </div>
+
+                        <!-- Pencil Control -->
+                        <div class="control-item" style="position: relative; background: #f9f9f9; border-radius: 8px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <h5 style="margin-bottom: 15px; color: #274E18; font-weight: 600;">Pencil</h5>
+                            <div class="image-container" style="position: relative; width: 100%; aspect-ratio: 1/1; border-radius: 4px; overflow: hidden; cursor: pointer;">
+                                <!-- Control Image (always visible) -->
+                                <img src="assets/images/results/c2.jpg" alt="Pencil Control" class="control-img" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 2;">
+                                <!-- Generated Image (appears on hover) -->
+                                <img src="assets/images/results/p2.png" alt="Generated from Pencil" class="generated-img" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 1; opacity: 0; transition: opacity 1s ease-in-out;">
+                            </div>
+                            <div class="prompt-text" style="margin-top: 15px; padding: 10px; background: #fff; border-radius: 4px; font-size: 12px; color: #555; line-height: 1.4; min-height: 60px;">
+                                "A top-down view of a highway intersection with multiple lanes, overpasses. The roads are surrounded by trees and shrubs, there is a large building on the left."
+                            </div>
+                        </div>
+
+                        <!-- Canny Control -->
+                        <div class="control-item" style="position: relative; background: #f9f9f9; border-radius: 8px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <h5 style="margin-bottom: 15px; color: #274E18; font-weight: 600;">Canny</h5>
+                            <div class="image-container" style="position: relative; width: 100%; aspect-ratio: 1/1; border-radius: 4px; overflow: hidden; cursor: pointer;">
+                                <!-- Control Image (always visible) -->
+                                <img src="assets/images/results/c3.jpg" alt="Canny Control" class="control-img" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 2;">
+                                <!-- Generated Image (appears on hover) -->
+                                <img src="assets/images/results/p3.png" alt="Generated from Canny" class="generated-img" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 1; opacity: 0; transition: opacity 1s ease-in-out;">
+                            </div>
+                            <div class="prompt-text" style="margin-top: 15px; padding: 10px; background: #fff; border-radius: 4px; font-size: 12px; color: #555; line-height: 1.4; min-height: 60px;">
+                                "An aerial photograph showing a large industrial area in the desert. There are multiple buildings, roads, and several parking spaces with cars parked in them."
+                            </div>
+                        </div>
+
+                        <!-- Lineart Control -->
+                        <div class="control-item" style="position: relative; background: #f9f9f9; border-radius: 8px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <h5 style="margin-bottom: 15px; color: #274E18; font-weight: 600;">Lineart</h5>
+                            <div class="image-container" style="position: relative; width: 100%; aspect-ratio: 1/1; border-radius: 4px; overflow: hidden; cursor: pointer;">
+                                <!-- Control Image (always visible) -->
+                                <img src="assets/images/results/c4.jpg" alt="Lineart Control" class="control-img" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 2;">
+                                <!-- Generated Image (appears on hover) -->
+                                <img src="assets/images/results/p4.png" alt="Generated from Lineart" class="generated-img" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 1; opacity: 0; transition: opacity 1s ease-in-out;">
+                            </div>
+                            <div class="prompt-text" style="margin-top: 15px; padding: 10px; background: #fff; border-radius: 4px; font-size: 12px; color: #555; line-height: 1.4; min-height: 60px;">
+                                "A satellite view of a golf course surrounded by green fields and trees. Several fairways and bunkers are scattered throughout the course with a few buildings and roads."
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive CSS and JavaScript -->
+                    <style>
+                        /* 确保图片容器相对定位 */
+                        .image-container {
+                            position: relative !important;
+                        }
+                        
+                        /* 控制图片样式 */
+                        .control-img {
+                            width: 100% !important;
+                            height: 100% !important;
+                            object-fit: cover !important;
+                            position: absolute !important;
+                            top: 0 !important;
+                            left: 0 !important;
+                            z-index: 2 !important;
+                            opacity: 1 !important;
+                            transition: opacity 1s ease-in-out !important;
+                        }
+                        
+                        /* 生成图片样式 */
+                        .generated-img {
+                            width: 100% !important;
+                            height: 100% !important;
+                            object-fit: cover !important;
+                            position: absolute !important;
+                            top: 0 !important;
+                            left: 0 !important;
+                            z-index: 1 !important;
+                            opacity: 0 !important;
+                            transition: opacity 1s ease-in-out !important;
+                        }
+                        
+                        /* 悬停效果 */
+                        .control-item:hover .control-img {
+                            opacity: 0 !important;
+                        }
+                        
+                        .control-item:hover .generated-img {
+                            opacity: 1 !important;
+                        }
+                        
+                        /* 卡片悬停效果 */
+                        .control-item {
+                            transition: transform 0.3s ease;
+                        }
+                        
+                        .control-item:hover {
+                            transform: translateY(-5px);
+                        }
+                        
+                        /* Responsive design for mobile */
+                        @media screen and (max-width: 768px) {
+                            .control-results-grid {
+                                grid-template-columns: repeat(2, 1fr) !important;
+                                gap: 15px !important;
+                            }
+                            
+                            .image-container {
+                                aspect-ratio: 1/1 !important;
+                            }
+                            
+                            .prompt-text {
+                                font-size: 10px !important;
+                                min-height: 50px !important;
+                                padding: 8px !important;
+                            }
+                        }
+                        
+                        @media screen and (max-width: 480px) {
+                            .control-results-grid {
+                                grid-template-columns: 1fr !important;
+                            }
+                        }
+                    </style>
+                    
+                    <!-- JavaScript for debugging and ensuring proper functionality -->
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            // 检查所有控制项目是否正确加载
+                            const controlItems = document.querySelectorAll('.control-item');
+                            console.log('Found control items:', controlItems.length);
+                            
+                            // 为每个控制项添加事件监听器
+                            controlItems.forEach((item, index) => {
+                                const controlImg = item.querySelector('.control-img');
+                                const generatedImg = item.querySelector('.generated-img');
+                                
+                                if (controlImg && generatedImg) {
+                                    console.log(`Control item ${index + 1}:`, {
+                                        controlSrc: controlImg.src,
+                                        generatedSrc: generatedImg.src
+                                    });
+                                    
+                                    // 鼠标悬停事件
+                                    item.addEventListener('mouseenter', function() {
+                                        console.log(`Hovering over control item ${index + 1}`);
+                                        controlImg.style.opacity = '0';
+                                        generatedImg.style.opacity = '1';
+                                    });
+                                    
+                                    // 鼠标离开事件
+                                    item.addEventListener('mouseleave', function() {
+                                        console.log(`Left control item ${index + 1}`);
+                                        controlImg.style.opacity = '1';
+                                        generatedImg.style.opacity = '0';
+                                    });
+                                    
+                                    // 检查图片是否加载成功
+                                    generatedImg.addEventListener('load', function() {
+                                        console.log(`Generated image ${index + 1} loaded successfully`);
+                                    });
+                                    
+                                    generatedImg.addEventListener('error', function() {
+                                        console.error(`Failed to load generated image ${index + 1}:`, generatedImg.src);
+                                        // 如果图片加载失败，显示错误信息
+                                        const errorDiv = document.createElement('div');
+                                        errorDiv.style.cssText = 'position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(255,0,0,0.8); color: white; padding: 5px; font-size: 10px; border-radius: 3px; z-index: 3; opacity: 0; transition: opacity 1s ease;';
+                                        errorDiv.textContent = 'Image not found';
+                                        item.querySelector('.image-container').appendChild(errorDiv);
+                                        
+                                        // 在悬停时显示错误信息
+                                        item.addEventListener('mouseenter', function() {
+                                            errorDiv.style.opacity = '1';
+                                        });
+                                        item.addEventListener('mouseleave', function() {
+                                            errorDiv.style.opacity = '0';
+                                        });
+                                    });
+                                }
+                            });
+                        });
+                    </script>
+                </div>
             </section>
+
+
         </section>
 
         <!--/.profiles-->         
