@@ -727,10 +727,10 @@
                 </div>
                 <!-- Two Benchmark Tables -->
                 <div class="container" style="text-align: center; margin: 40px auto;">
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 30px; max-width: 1200px; margin: 0 auto;">
+                    <div class="benchmark-tables-container">
                         
                         <!-- First Table: T2I Generation Benchmark -->
-                        <div style="flex: 1; max-width: 48%;">
+                        <div class="benchmark-table-wrapper">
                             <h4 style="margin-bottom: 20px; color: #333;">Table 2: T2I Generation Benchmark</h4>
                             <table style="width: 100%; border-collapse: collapse; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
                                 <thead>
@@ -777,7 +777,7 @@
                         </div>
                         
                         <!-- Second Table: T2I Controllable Generation Benchmark -->
-                        <div style="flex: 1; max-width: 48%;">
+                        <div class="benchmark-table-wrapper">
                             <h4 style="margin-bottom: 20px; color: #333;">Table 3: T2I Controllable Generation Benchmark</h4>
                             <table style="width: 100%; border-collapse: collapse; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
                                 <thead>
@@ -838,24 +838,58 @@
                     
                     <!-- 响应式设计：移动端垂直布局 -->
                     <style>
+                        /* 桌面端表格容器样式 */
+                        .benchmark-tables-container {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            gap: 30px;
+                            max-width: 1200px;
+                            margin: 0 auto;
+                        }
+                        
+                        .benchmark-table-wrapper {
+                            flex: 1;
+                            max-width: 48%;
+                        }
+                        
+                        /* 移动端响应式设计 */
                         @media screen and (max-width: 768px) {
-                            .container > div:last-child {
+                            .benchmark-tables-container {
                                 flex-direction: column !important;
-                                gap: 20px !important;
+                                gap: 30px !important;
                             }
                             
-                            .container > div:last-child > div {
+                            .benchmark-table-wrapper {
                                 flex: none !important;
                                 width: 100% !important;
                                 max-width: none !important;
+                                margin-bottom: 20px;
                             }
                             
-                            .container table {
-                                font-size: 12px !important;
+                            .benchmark-tables-container table {
+                                font-size: 11px !important;
                             }
                             
-                            .container th, .container td {
-                                padding: 8px 4px !important;
+                            .benchmark-tables-container th, 
+                            .benchmark-tables-container td {
+                                padding: 6px 3px !important;
+                            }
+                            
+                            .benchmark-tables-container h4 {
+                                font-size: 16px !important;
+                                margin-bottom: 15px !important;
+                            }
+                        }
+                        
+                        @media screen and (max-width: 480px) {
+                            .benchmark-tables-container table {
+                                font-size: 10px !important;
+                            }
+                            
+                            .benchmark-tables-container th, 
+                            .benchmark-tables-container td {
+                                padding: 4px 2px !important;
                             }
                         }
                     </style>
