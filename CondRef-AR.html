@@ -1,0 +1,191 @@
+<!doctype html> 
+<html class="no-js" lang="en"> 
+    <head> 
+        <!-- meta data -->         
+        <meta charset="utf-8"/> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->         
+        <!--font-family-->         
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet"/> 
+        <!-- title of site -->         
+        <title>PU JIN</title>         
+        <!-- For favicon png -->         
+        <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/> 
+        <!--font-awesome.min.css-->         
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css"/> 
+        <!--flat icon css-->         
+        <link rel="stylesheet" href="assets/css/flaticon.css"/> 
+        <!--animate.css-->         
+        <link rel="stylesheet" href="assets/css/animate.css"/> 
+        <!--owl.carousel.css-->         
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css"/> 
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"/> 
+        <!--bootstrap.min.css-->         
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"/> 
+        <!-- bootsnav -->         
+        <link rel="stylesheet" href="assets/css/bootsnav.css"/> 
+        <!--style.css-->         
+        <link rel="stylesheet" href="assets/css/style.css"/> 
+        <!--responsive.css-->         
+        <link rel="stylesheet" href="assets/css/responsive.css"/> 
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->         
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->         
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->         
+    </head>     
+    <body> 
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->         
+        <!-- top-area Start -->         
+        <header class="top-area"> 
+            <div class="header-area"> 
+                <!-- Start Navigation -->                 
+                <!--/nav-->                 
+                <!-- End Navigation -->                 
+            </div>
+            <!--/.header-area-->             
+            <div class="clearfix"></div>             
+        </header>
+
+    
+        <!--welcome-hero end -->         
+        <!--about start -->         
+        <section id="about" class="about"> 
+            <!-- <div class="section-heading text-center"> 
+                <h2><b>About me</b></h2> 
+            </div>              -->
+            <div class="single-about-heading text-center" style="width: 100%; margin: 0 auto;"> 
+                <!-- <h7 style="text-align: center; display: block; width: 100%;"><b>DesignEarth</b></h7>  -->
+                <div class="container"> <h8> <br> CondRef-AR: Condition-as-a-Reference Randomized Autoregressive Modelling for Controllable Aerial Image Generation </h8></div>
+                
+                <h7 style="text-align: center; display: block; width: 100%;">Pu Jin</h7> 
+                <!-- <h7 style="text-align: center; display: block; width: 100%;">Technical University of Munich</h7> -->
+            </div>
+            
+            <!-- 添加三个居中按钮 -->
+            <div style="display: flex; justify-content: center; margin-top: 30px; gap: 20px;">
+                <a href="https://github.com/Jin-Pu/CondRef-AR" target="_blank" class="btn" style="background-color: #274E18; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none; font-weight: 500; transition: all 0.3s ease;">
+                    <i class="fa fa-file-text-o" aria-hidden="true" style="margin-right: 8px;"></i>Paper
+                </a>
+                <a href="https://github.com/Jin-Pu/CondRef-AR" target="_blank" class="btn" style="background-color: #274E18; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none; font-weight: 500; transition: all 0.3s ease;">
+                    <i class="fa fa-github" aria-hidden="true" style="margin-right: 8px;"></i>Github Repo
+                </a>
+                <a href="https://huggingface.co/PuTorch/CondRef-AR" target="_blank" class="btn" style="background-color: #274E18; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none; font-weight: 500; transition: all 0.3s ease;">
+                    <i class="fa fa-code" aria-hidden="true" style="margin-right: 8px;"></i>Huggingface
+                </a>
+            </div>
+            <div class="container">
+                <div class="single-about-txt"> 
+                    <h3>  <br> Controllable image generation, particularly for complex aerial scenes, demands both high-fidelity synthesis and precise adherence to input conditions such as semantic maps or edge diagrams. Aerial imagery is characterized by extensive spatial dependencies, where geographical features and objects exhibit strong correlations across the entire scene. Accurately modeling these long-range interactions often requires a broader contextual field of view to capture comprehensive spatial relationships. Recently, autoregressive (AR) models make significant progress in controllable generation. However, their inherent unidirectional context modeling limits the global coherence and structural fidelity of generated images. To overcome this constraint, we propose ConRef-AR, a novel Condition-as-a-Reference randomized autoregressive modelling for controllable aerial image generation. Our approach is built upon a key insight: in controllable tasks, the input condition is not merely a static guide but a dynamic, intrinsic reference that specifies the content for each spatial location. To leverage this, CondRef-AR employs a randomized training strategy where the image token sequence is permuted during training to expose the model to diverse contexts. Crucially, instead of relying on auxiliary mechanisms to resolve prediction ambiguities introduced by randomization, our core innovation is to directly utilize the corresponding control signal as the primary reference for predicting each token. This elegant substitution allows the model to naturally disambiguate predictions while simultaneously achieving superior control precision, thereby enhancing both generation quality and fidelity within the efficient autoregressive paradigm.
+                    </h3>
+                </div>
+            </div>
+        </section> 
+
+        <section id="profiles" class="profiles">
+            <section id="experience" class="experience"> 
+                <div class="section-heading text-center"> 
+                    <h2><b>CondRef-AR Method</b></h2> 
+                </div> 
+                <div class="container">
+                    <div class="single-about-txt"> 
+                        <h3>  <br> This section details our proposed Condition-as-a-Reference Randomized Autoregressive Modelling (CondRef-AR) framework. Our core insight is that in controllable generation tasks, the input condition should not be treated as a static, global guide, but rather as a dynamic, intrinsic reference that provides precise guidance for the prediction at each spatial location. Building upon this insight, CondRef-AR employs a randomized training strategy to learn rich bidirectional contexts and introduces a novel mechanism that leverages the control signal itself as the primary means to resolve the prediction ambiguities introduced by randomization.   </h3>
+                        <!-- <h7 style="text-align: center; display: block; width: 100%;">Technical University of Munich</h7> -->
+                    </div>
+                </div>
+
+                <div class="container" style="text-align: center; margin: 40px auto;">
+                    <h4 style="margin-bottom: 20px; color: #333;">Figure 1: Overview of CondRef-AR framework</h4>
+                    <img src="assets/images/method/method.jpg" alt="overview" style="width: 100%; height: auto; border-radius: 4px; display: block;">
+                </div>
+
+
+            </section>
+            
+            <section id="experience" class="experience"> 
+                <div class="section-heading text-center"> 
+                    <h2><b>Results</b></h2> 
+                </div>
+                <div class="container">
+                    <div class="single-about-txt"> 
+                        <h3>  <br> We demonstrate the effectiveness of CondRef-AR through extensive experiments on the DesignEarth dataset, showcasing its superior performance in generating high-fidelity aerial images. By varying the input conditions and prompts, CondRef-AR can generate diverse aerial images: </h3>
+                    </div>
+                </div>
+
+                <div class="container" style="text-align: center; margin: 40px auto;">
+                    <h4 style="margin-bottom: 20px; color: #333;">Figure 2: Generated Aerial Images</h4>
+                    <img src="assets/images/method/samples.png" alt="overview" style="width: 100%; height: auto; border-radius: 4px; display: block;">
+                </div>
+
+                <div class="container">
+                    <div class="single-about-txt"> 
+                        <h3>  <br> ConRef-AR can generate continuous, plausible, and high-resolution sequences of land-use change images based on a series of temporal semantic condition graphs. As shown in the figure below, the model successfully simulates the entire process—from a pristine forest gradually transforming into a modern residential urban area:</h3>
+                    </div>
+                </div>
+                <div class="container" style="text-align: center; margin: 40px auto;">
+                    <h4 style="margin-bottom: 20px; color: #333;">Figure 3: Generated Land-Use Change Sequences</h4>
+                    <img src="assets/images/method/evolution.png" alt="overview" style="width: 100%; height: auto; border-radius: 4px; display: block;">
+                </div>
+                
+
+            </section>
+
+
+        </section>
+
+        <!--/.profiles-->         
+        <!--profiles end -->         
+        <!--portfolio start -->         
+
+     
+    </section>
+    <!--/.clients-->     
+    <!--clients end -->     
+    <!--contact start -->     
+    <!--/.contact-->     
+    <!--contact end -->     
+    <!--footer-copyright start-->     
+    <footer id="footer-copyright" class="footer-copyright"> 
+        <div class="container"> 
+            <div class="hm-footer-copyright text-center"> 
+                <p>&copy; 2025 copyright Pu Jin</p>
+                <!--/p-->                 
+            </div>
+            <!--/.text-center-->             
+        </div>
+        <!--/.container-->         
+        <div id="scroll-Top"> 
+            <div class="return-to-top"> 
+                <i class="fa fa-angle-up " id="scroll-top"></i> 
+            </div>             
+        </div>
+        <!--/.scroll-Top-->         
+    </footer>
+    <!--/.footer-copyright-->     
+    <!--footer-copyright end-->     
+    <!-- Include all js compiled plugins (below), or include individual files as needed -->     
+    <script src="assets/js/jquery.js"></script>     
+    <!--modernizr.min.js-->     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>     
+    <!--bootstrap.min.js-->     
+    <script src="assets/js/bootstrap.min.js"></script>     
+    <!-- bootsnav js -->     
+    <script src="assets/js/bootsnav.js"></script>     
+    <!-- jquery.sticky.js -->     
+    <script src="assets/js/jquery.sticky.js"></script>     
+    <!-- for progress bar start-->     
+    <!-- progressbar js -->     
+    <script src="assets/js/progressbar.js"></script>     
+    <!-- appear js -->     
+    <script src="assets/js/jquery.appear.js"></script>     
+    <!-- for progress bar end -->     
+    <!--owl.carousel.js-->     
+    <script src="assets/js/owl.carousel.min.js"></script>     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>     
+    <!--Custom JS-->     
+    <script src="assets/js/custom.js"></script>     
+</body>
